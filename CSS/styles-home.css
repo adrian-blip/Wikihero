@@ -1,0 +1,182 @@
+
+:root{
+    /* Tipos de fuentes y tamaños */
+
+    --fuente-titulos:"nunito-regular";
+    --fuente-subtitulos:"roboto-regular";
+    --tamaño-titulos:40px;
+    --tamaño-textos:22px;
+
+
+    /* color letras */
+    --color-letras:#2f353A;
+    --color-letras-resaltadas:#EAEAEA;
+
+
+    /* colores de fondo */
+    --color-rojo:#f64756;
+    --color-amarillo:#ffd221;
+    --color-blanco:#fefefe;
+    --color-gris:#EAEAEA;
+    --color-morado:#432f86;
+    --color-azul-oscuro: #09121d;
+    --color-azul1:#013173;
+    --color-azul2:#0e7eec;
+
+}
+
+@font-face {
+    font-family:"nunito-regular";
+    src:  url("../FONTS/Nunito/Nunito-Regular.ttf")
+}
+
+
+@font-face {
+    font-family:"roboto-regular";
+    src: url("../FONTS/Roboto/Roboto-Regular.ttf")
+}
+
+
+*{
+    margin:0;
+    background-color: var(--color-gris);
+    font-family: var(--fuente-subtitulos);
+    font-size:var(--tamaño-textos);
+    color:var(--color-letras);
+}
+
+body{
+    background-color: var(--color-blanco);
+    width:100%;
+    height: 100vh;
+    min-width: 356px;
+}
+
+header{
+    width:100%;
+    background-color: var(--color-blanco);
+}
+
+.contentHeader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 5%;
+    box-shadow: 5px 1px 10px #707070;
+}
+
+.containerLogo{
+    justify-content: center;
+    height:40px;
+    width:250px;
+}
+
+.containerLogo img{
+    width:100%;
+    height:100%;
+}
+
+.iconoMenu{
+    cursor: pointer;
+}
+
+#btnMenu{
+    display: none;
+}
+
+
+/* menu hamburguesa*/
+
+.contMenu{
+    display:none ;
+}
+
+#btnMenu:checked ~ .contMenu{
+    display:block;
+}
+
+.contMenu{
+    background-color: var(--color-gris);
+    width: 425px ;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.optionsMenu{
+    padding: 40px;
+}
+
+.contoptionsMenu{
+    margin-left: 45px;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.contMenuOptionsIcon{
+    width: 7.5%;
+    min-width: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contMenuOptionsIcon img{
+    width: 100%;
+    height: 100%;
+}
+
+.contoptionsMenu span{
+    font-size: var(--tamaño-textos);
+    font-family: var(--fuente-titulos);
+    color: var(--color-azul2);
+}
+
+.allDonar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.allDonarIcon{
+    width: 7.5%;
+    min-width: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.allDonar span{
+    font-size: var(--tamaño-textos);
+    font-family: var(--fuente-titulos);
+    color: var(--color-azul2);
+}
+
+.userSesion{
+    margin-top: 15px;
+    display: flex;
+    padding: 5%;
+    justify-content:center
+}
+
+.sesionItems{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.sesionItemsIcon{
+    margin-left: 10px;
+}
+
+.sesionItems span{
+    color: var(--color-azul2);
+}
+
+
+
+
